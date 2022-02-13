@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="YA$$iN MOTORS, автомобили из ОАЭ, продажа автомобилей"
+    />
+    <meta
+      name="description"
+      content="Продажа автомобилей без пробега из Объединённых Арабских Эмиратов"
+    />
+    <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+    <meta property="og:locale" content="ru_RU" />
+    <!-- тип контента, по умолчанию используется article -->
+    <meta property="og:type" content="article" />
+    <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+    <meta property="og:title" content="YA$$iN MOTORS" />
+    <!-- описание страницы -->
+    <meta
+      property="og:description"
+      content="YA$$iN MOTORS - продажа автомобилей из ОАЭ"
+    />
+    <!-- ссылка на изображение, которое будет публиковаться в записи -->
+    <meta property="og:image" content="" />
+    <!-- ссылка на текущую страницу -->
+    <meta property="og:url" content="" />
+    <title>YA$$iN MOTORS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./libs/fontawesome-free-5.15.4-web/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <form
+      class="contact-form"
+      id="formWrapper"
+      method="POST"
+      enctype="multipart/form-data"
+      action="./php/send.php"
+    >
+      <input type="hidden" name="project_name" value="yasin_motors" />
+      <input
+        type="hidden"
+        name="admin_email"
+        value="yassinmotorscars@gmail.com"
+      />
+      <input
+        type="hidden"
+        name="email_from"
+        value="yassinmotorscars@gmail.com"
+      />
+
+      <button class="close" id="close"></button>
+
+      <p class="contact-form__title">Оставить заявку</p>
+      <p class="contact-form__description"></p>
+
+      <div class="contact-form__input-wrapper">
+        <input
+          name="model"
+          type="text"
+          class="contact-form__input"
+          id="model"
+          placeholder="Марка и модель машины"
+        />
+      </div>
+
+      <div class="contact-form__input-wrapper">
+        <input
+          name="name"
+          type="text"
+          class="contact-form__input contact-form__input_name"
+          placeholder="Введите ваше имя"
+          required="required"
+        />
+      </div>
+
+      <div class="contact-form__input-wrapper">
+        <input
+          name="tel"
+          type="tel"
+          class="contact-form__input contact-form__input_tel"
+          placeholder="Введите ваш телефон"
+          required="required"
+        />
+      </div>
+
+      <div class="contact-form__input-wrapper">
+        <input
+          name="email"
+          type="email"
+          class="contact-form__input contact-form__input_email"
+          placeholder="Введите ваш email"
+          required="required"
+        />
+      </div>
+
+      <input class="contact-form__button" type="submit" value="Написать" />
+    </form>
+    <div id="answer" class="answer"></div>
+
+    <header>
+      <nav class="nav-menu">
+        <button class="hamburger" id="hamburger"></button>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <button class="close" id="mobileClose"></button>
+          <div class="mobile-menu__links">
+            <a class="mobile-logo__link" href="index.html">
+              <span class="yas">YAS</span><span class="mot">MOT</span>
+            </a>
+            <!-- <a class="nav__link" href="#models_id">Модельный ряд</a> -->
+            <!-- <a class="nav__link" href="#video_id">Видео</a> -->
+            <!-- <a class="nav__link" href="#!">О нас</a> -->
+            <!-- <a class="nav__link" href="#!">Обратная связь</a> -->
+          </div>
+          <div class="footer__icons">
+            <a
+              class="footer__icon"
+              href="https://vk.com/id691600682"
+              target="_blank"
+            >
+              <i class="fab fa-vk"></i>
+            </a>
+
+            <a
+              class="footer__icon"
+              href="https://www.instagram.com/yassin_motors/"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a class="footer__icon" href="mailto:yassinmotorscars@gmail.com">
+              <i class="far fa-envelope-open"></i>
+            </a>
+
+            <a class="footer__icon" href="tel:77761918484">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="header__top">
+          <div class="row">
+            <div class="logo">
+              <a class="logo__link" href="index.html">
+                <span class="yas">YAS</span><span class="mot">MOT</span>
+              </a>
+            </div>
+            <nav class="header__nav">
+              <div class="row">
+                <!-- <a class="nav__link" href="#models_id">Модельный ряд</a> -->
+                <!-- <a class="nav__link" href="#video_id">Видео</a> -->
+                <!-- <a class="nav__link" href="#!">О нас</a> -->
+                <!-- <a class="nav__link" href="#!">Обратная связь</a> -->
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="header__text">
+          <h1 class="bg_h1">YASSIN MOTORS</h1>
+          <p class="header__description" style="font-style: italic">
+            Новые авто в новых комплектациях!
+          </p>
+          <a class="button_link" href="#models_id">Перейти в модельный ряд</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <h2 class="section__title" id="models_id">Модельный ряд</h2>
+
+          <div class="models">
+            <div class="card">
+              <div class="row">
+                <div class="card__img">
+                  <img src="./img/duster2021.png" alt="duster" title="duster" />
+                </div>
+
+                <div class="card__description">
+                  <p class="card__name">Renault Duster III</p>
+
+                  <div class="card__info">
+                    <div class="row">
+                      <div class="card__param">Год</div>
+                      <div class="card__value">2021</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="card__param">Цена</div>
+                      <div class="card__value">10 300 000 тг.</div>
+                    </div>
+                  </div>
+                  <button class="button_link">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="row">
+                <div class="card__img">
+                  <img
+                    src="./img/corolla2020.png"
+                    alt="corolla"
+                    title="corolla"
+                  />
+                </div>
+
+                <div class="card__description">
+                  <p class="card__name">Toyota Corolla</p>
+
+                  <div class="card__info">
+                    <div class="row">
+                      <div class="card__param">Год</div>
+                      <div class="card__value">2020</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="card__param">Цена</div>
+                      <div class="card__value">11 350 000 тг.</div>
+                    </div>
+                  </div>
+                  <button class="button_link">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="row">
+                <div class="card__img">
+                  <img
+                    src="./img/captiva2022.png"
+                    alt="captiva"
+                    title="captiva"
+                  />
+                </div>
+
+                <div class="card__description">
+                  <p class="card__name">Chevrolet Captiva</p>
+
+                  <div class="card__info">
+                    <div class="row">
+                      <div class="card__param">Год</div>
+                      <div class="card__value">2022</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="card__param">Цена</div>
+                      <div class="card__value">11 350 000 тг.</div>
+                    </div>
+                  </div>
+                  <button class="button_link">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="row">
+                <div class="card__img">
+                  <img
+                    src="./img/attrage2021.png"
+                    alt="attrage"
+                    title="attrage"
+                  />
+                </div>
+
+                <div class="card__description">
+                  <p class="card__name">Mitsubishi Attrage</p>
+
+                  <div class="card__info">
+                    <div class="row">
+                      <div class="card__param">Год</div>
+                      <div class="card__value">2021</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="card__param">Цена</div>
+                      <div class="card__value">8 450 000 тг.</div>
+                    </div>
+                  </div>
+                  <button class="button_link">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="row">
+                <div class="card__img">
+                  <img src="./img/ertiga2022.png" alt="ertiga" title="ertiga" />
+                </div>
+
+                <div class="card__description">
+                  <p class="card__name">Suzuki Ertiga</p>
+
+                  <div class="card__info">
+                    <div class="row">
+                      <div class="card__param">Год</div>
+                      <div class="card__value">2022</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="card__param">Цена</div>
+                      <div class="card__value">11 066 000 тг.</div>
+                    </div>
+                  </div>
+                  <button class="button_link">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row row--vert-center">
+          <div class="footer__text">
+            <p class="footer__p">
+              <span class="footer__copyright">&copy; 2021</span> YASSIN MOTORS
+            </p>
+          </div>
+          <div class="footer__logo">
+            <div class="logo">
+              <a href="index.html">
+                <span class="yas">YAS</span><span class="mot">MOT</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer__icons row row--vert-center">
+            <a
+              class="footer__icon"
+              href="https://vk.com/id691600682"
+              target="_blank"
+            >
+              <i class="fab fa-vk"></i>
+            </a>
+
+            <a
+              class="footer__icon"
+              href="https://www.instagram.com/yassin_motors/"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a class="footer__icon" href="mailto:yassinmotorscars@gmail.com">
+              <i class="far fa-envelope-open"></i>
+            </a>
+
+            <a class="footer__icon" href="tel:77761918484">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./libs/jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

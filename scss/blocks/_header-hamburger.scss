@@ -1,0 +1,25 @@
+.hamburger {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-top: 5px #ffd82b solid;
+  border-bottom: 5px #ffd82b solid;
+}
+
+.hamburger::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #ffd82b;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}

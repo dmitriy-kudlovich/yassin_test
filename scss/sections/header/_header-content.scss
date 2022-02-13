@@ -1,0 +1,51 @@
+.logo__link {
+  font-size: 20px;
+  @media (min-width: 1140px) {
+    font-size: 40px;
+  }
+}
+
+.yas {
+  color: yellow;
+}
+.mot {
+  color: white;
+}
+header {
+  padding: 12px 0 100px;
+  position: relative;
+  background-color: black;
+  background-image: url(./img/bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  color: #fff;
+}
+header:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.header__top {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  width: fit-content;
+}
+
+.header__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

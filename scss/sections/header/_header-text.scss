@@ -1,0 +1,25 @@
+/* Text YASSiN MOTORS in header. */
+
+.bg_h1 {
+  margin-bottom: 30px;
+  font-family: Montserrat;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 0.1px white;
+  background: url(./img/yellow) no-repeat;
+  -webkit-background-clip: text;
+  animation: gradient 10s infinite linear;
+}
+
+@keyframes gradient {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.header__description {
+  margin-bottom: 30px;
+}
